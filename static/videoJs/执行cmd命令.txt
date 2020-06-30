@@ -1,0 +1,15 @@
+1.项目目录下执行:
+    node websocket.js supersecret 8081 8082
+2.打开cmd执行(播放第一个摄像头):
+    ffmpeg -i "你的rtsp" -q 0 -f mpegts -codec:v mpeg1video -s 800x600 http://127.0.0.1:8081/supersecret/live1
+3.打开cmd执行(播放第二个摄像头):
+    ffmpeg -i "你的rtsp" -q 0 -f mpegts -codec:v mpeg1video -s 800x600 http://127.0.0.1:8081/supersecret/live2
+4.打开view-stream.html看效果
+
+
+
+
+ffmpeg -i rtsp://admin:12345qwert@192.168.0.5:554/h264/ch1/main/av_stream
+-q 0 -f mpegts -codec:v mpeg1video -s 800x600 http://127.0.0.1:8081/supersecret/live2
+
+ffmpeg -i   rtsp://admin:12345qwert@192.npm 168.0.6:554/h264/ch1/main/av_stream   -q 0 -f mpegts -codec:v mpeg1video -s 800x600 http://127.0.0.1:8081/supersecret/live1
